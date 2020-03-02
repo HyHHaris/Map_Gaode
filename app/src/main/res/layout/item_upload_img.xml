@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/img"
+            android:background="#FFEAEEF1"
+            app:layout_constraintDimensionRatio="10:6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/textStatus"
+            android:text="上传中"
+            android:layout_height="wrap_content"/>
+
+
+    <ImageView
+            android:layout_width="20dp"
+            android:src="@drawable/ic_cancel_red_400_48dp"
+            android:id="@+id/btnCancel"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@null"
+            android:layout_height="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

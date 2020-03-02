@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4175FA</color>
+    <color name="colorPrimaryDark">#FF4175FA</color>
+    <color name="colorAccent">#FF4175FA</color>
+
+    <color name="bg_blue">#FF2A58AD</color>
+    <color name="text_gray">#FF999999</color>
+    <color name="text_gray_darker">#FF666666</color>
+    <color name="bg_light_gray">#FFEAEEF1</color>
+    <color name="text_light_blue">#FFA0BBF1</color>
+    <color name="normal_blue">#FF4175FA</color>
+
+    <color name="text_black">#ff333333</color>
+
+    <color name="red">#ff0000</color>
+    <color name="redTrans">#74FF0000</color>
+    <color name="blue">#FF4175FA</color>
+    <color name="blueTrans">#744175FA</color>
+    <color name="yellow">#FFC107</color>
+    <color name="yellowTrans">#74FFC107</color>
+    <color name="purple">#6A20E9</color>
+    <color name="purpleTrans">#746A20E9</color>
+    <color name="white">#ffffff</color>
+    <color name="whiteTrans">#74ffffff</color>
+    <color name="t">#4CAF50</color>
+
+</resources>

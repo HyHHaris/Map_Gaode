@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="QMUITopBarStyle">@style/QDTopBar</item>
+    </style>
+
+    <style name="AppTheme.MyButton">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:background">@drawable/text_round_bg</item>
+        <item name="android:backgroundTint">@color/normal_blue</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:textColor">@color/qmui_config_color_white</item>
+    </style>
+
+    <!--<style tdzl="Theme.AppCompat.Light" parent="Theme.MaterialComponents.Light"/>-->
+    <style name="AppRootTheme.Compat" parent="Theme.MaterialComponents.Light"/>
+    <style name="QDTopBar" parent="QMUI.TopBar">
+        <item name="qmui_topbar_title_color">@color/qmui_config_color_black</item>
+        <item name="qmui_topbar_need_separator">true</item>
+        <item name="qmui_topbar_title_text_size">18sp</item>
+        <item name="qmui_topbar_separator_color">@color/qmui_config_color_gray_6</item>
+        <item name="qmui_topbar_subtitle_color">@color/qmui_config_color_black</item>
+        <item name="qmui_topbar_height">48dp</item>
+        <item name="qmui_topbar_image_btn_height">48dp</item>
+        <item name="qmui_topbar_left_back_drawable_id">@drawable/ic_arrow_back_black_24dp</item>
+    </style>
+
+</resources>

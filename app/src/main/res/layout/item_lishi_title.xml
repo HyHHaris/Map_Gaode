@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:background="#FF2E70D3"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="28dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            app:autoSizeStepGranularity="0.5sp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:singleLine="true"
+            android:id="@+id/text1"
+            app:autoSizeMinTextSize="6dp"
+            android:text="编号"
+            android:gravity="center"
+            android:textColor="@color/qmui_config_color_white"
+            android:lines="1"
+            android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            android:id="@+id/text2"
+            app:autoSizeStepGranularity="0.5sp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:singleLine="true"
+            android:text="上报地块"
+            android:gravity="center"
+            android:textColor="@color/qmui_config_color_white"
+            android:lines="1"
+            android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            app:autoSizeStepGranularity="0.5sp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:singleLine="true"
+            android:text="巡查结束时间"
+            android:id="@+id/text3"
+            android:gravity="center"
+            android:textColor="@color/qmui_config_color_white"
+            android:lines="1"
+            android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            app:autoSizeStepGranularity="0.5sp"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:id="@+id/text4"
+            android:text="上报内容"
+            android:gravity="center"
+            android:textColor="@color/qmui_config_color_white"
+            android:lines="1"
+            android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            app:autoSizeStepGranularity="0.5sp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:id="@+id/text5"
+            android:text="操作"
+            android:gravity="center"
+            android:textColor="@color/qmui_config_color_white"
+            android:lines="1"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

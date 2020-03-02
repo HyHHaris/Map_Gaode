@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="8dp"
+        android:layout_width="300dp"
+        android:background="@color/qmui_config_color_white"
+        android:elevation="8dp"
+        android:layout_height="wrap_content">
+
+    <View
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/blueLine"
+            android:layout_width="3dp"
+            app:layout_constraintBottom_toBottomOf="@id/title"
+            android:background="#FF2591EC"
+            android:layout_height="0dp"/>
+
+    <TextView
+            app:layout_constraintStart_toEndOf="@id/blueLine"
+            app:layout_constraintTop_toTopOf="@id/blueLine"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/text_black"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="地块详情"
+            android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="300dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/rcv"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="300dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

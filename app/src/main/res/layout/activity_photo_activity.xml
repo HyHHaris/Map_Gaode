@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/qmui_config_color_75_pure_black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.a01tech.map_gaode.PhotoActivity">
+
+
+
+    <com.github.chrisbanes.photoview.PhotoView
+            android:layout_width="match_parent"
+            android:id="@+id/photoView"
+            android:layout_height="match_parent"/>
+
+    <ImageButton
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerInside"
+            android:id="@+id/btnBack"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:layout_width="40dp"
+            android:src="@mipmap/icon_back"
+            android:layout_height="40dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

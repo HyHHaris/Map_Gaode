@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/bg_light_gray"
+        android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerTop"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:background="@color/qmui_config_color_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:elevation="4dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/btnReturn"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="4dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/icon_back_blue"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/textTitle"
+                    android:textColor="@color/normal_blue"
+                    android:text="地图数据"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@mipmap/icon_time"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/textTime"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextClock
+                android:id="@+id/textTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:format12Hour="HH:mm"
+                android:format24Hour="HH:mm"
+                android:text="17:31"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/textDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"/>
+
+        <TextClock
+                android:id="@+id/textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:format12Hour="MM-dd"
+                android:format24Hour="MM-dd"
+                android:text="04-12"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textTime"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:background="@color/qmui_config_color_white"
+            android:padding="4dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerTop">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guideline"
+                    app:layout_constraintGuide_percent="0.5"
+                    android:orientation="vertical"/>
+
+            <View
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/blueLine"
+                    android:layout_width="3dp"
+                    app:layout_constraintBottom_toBottomOf="@id/title"
+                    android:background="#FF2591EC"
+                    android:layout_height="0dp"/>
+
+            <TextView
+                    app:layout_constraintStart_toEndOf="@id/blueLine"
+                    app:layout_constraintTop_toTopOf="@id/blueLine"
+                    android:layout_marginStart="4dp"
+                    android:id="@+id/title"
+                    android:drawableStart="@drawable/short_blue_line"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_black"
+                    android:text="上报地块"
+                    android:layout_height="wrap_content"/>
+
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:text="广东省深圳市南山区明亮科技园588"
+                    android:textColor="@color/text_gray_darker"
+                    app:layout_constraintTop_toBottomOf="@id/title"
+                    app:layout_constraintStart_toStartOf="@id/title"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toStartOf="@id/guideline"
+                    android:id="@+id/textDikuaiName"
+                    android:background="@drawable/edit_bg_gray"
+                    android:paddingStart="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_height="wrap_content"/>
+
+
+            <View
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textDikuaiName"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/blueLine1"
+                    android:layout_width="3dp"
+                    app:layout_constraintBottom_toBottomOf="@id/title1"
+                    android:background="#FF2591EC"
+                    android:layout_height="0dp"/>
+
+            <TextView
+                    app:layout_constraintStart_toEndOf="@id/blueLine1"
+                    app:layout_constraintTop_toTopOf="@id/blueLine1"
+                    android:layout_marginStart="4dp"
+                    android:id="@+id/title1"
+                    android:drawableStart="@drawable/short_blue_line"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_black"
+                    android:text="建筑轨迹"
+                    android:layout_height="wrap_content"/>
+
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:text="轨迹数据20190426_16:31"
+                    app:layout_constraintTop_toBottomOf="@id/title1"
+                    android:id="@+id/textGuijiName"
+                    app:layout_constraintStart_toStartOf="@id/title1"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toStartOf="@id/guideline"
+                    android:background="@drawable/edit_bg_gray"
+                    android:paddingStart="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_height="wrap_content"/>
+
+
+            <View
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textGuijiName"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/blueLine2"
+                    android:layout_width="3dp"
+                    app:layout_constraintBottom_toBottomOf="@id/title2"
+                    android:background="#FF2591EC"
+                    android:layout_height="0dp"/>
+
+            <TextView
+                    app:layout_constraintStart_toEndOf="@id/blueLine2"
+                    app:layout_constraintTop_toTopOf="@id/blueLine2"
+                    android:layout_marginStart="4dp"
+                    android:id="@+id/title2"
+                    android:drawableStart="@drawable/short_blue_line"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_black"
+                    android:text="现场照片"
+                    android:layout_height="wrap_content"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintTop_toBottomOf="@id/title2"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@id/title2"
+                    android:id="@+id/rcvUpload"
+                    app:layout_constraintEnd_toStartOf="@id/guideline"
+                    android:layout_height="0dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <View
+                    app:layout_constraintStart_toEndOf="@id/guideline"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/blueLine3"
+                    android:layout_width="3dp"
+                    app:layout_constraintBottom_toBottomOf="@id/title3"
+                    android:background="#FF2591EC"
+                    android:layout_height="0dp"/>
+
+            <TextView
+                    app:layout_constraintStart_toEndOf="@id/blueLine3"
+                    app:layout_constraintTop_toTopOf="@id/blueLine3"
+                    android:layout_marginStart="4dp"
+                    android:id="@+id/title3"
+                    android:drawableStart="@drawable/short_blue_line"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_black"
+                    android:text="巡查人员"
+                    android:layout_height="wrap_content"/>
+
+
+            <!--     <EditText
+                         android:layout_width="0dp"
+                         android:hint="输入巡查内容"
+                         app:layout_constraintTop_toBottomOf="@id/title3"
+                         android:id="@+id/edtXunChaNeiRong"
+                         app:layout_constraintStart_toStartOf="@id/title3"
+                         android:layout_marginTop="4dp"
+                         android:layout_marginEnd="12dp"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         android:lines="1"
+                         android:background="@drawable/edit_bg_gray"
+                         android:paddingStart="8dp"
+                         android:paddingTop="4dp"
+                         android:paddingBottom="4dp"
+                         android:layout_height="wrap_content"/>-->
+
+            <com.google.android.material.chip.ChipGroup
+                    app:layout_constraintTop_toBottomOf="@id/title3"
+                    app:layout_constraintStart_toStartOf="@id/title3"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="0dp"
+                    android:id="@+id/chipGroup"
+                    android:layout_height="wrap_content">
+
+            </com.google.android.material.chip.ChipGroup>
+
+
+            <View
+                    app:layout_constraintStart_toEndOf="@id/guideline"
+                    app:layout_constraintTop_toBottomOf="@id/chipGroup"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/blueLine4"
+                    android:layout_width="3dp"
+                    app:layout_constraintBottom_toBottomOf="@id/title4"
+                    android:background="#FF2591EC"
+                    android:layout_height="0dp"/>
+
+            <TextView
+                    app:layout_constraintStart_toEndOf="@id/blueLine4"
+                    app:layout_constraintTop_toTopOf="@id/blueLine4"
+                    android:layout_marginStart="4dp"
+                    android:id="@+id/title4"
+                    android:drawableStart="@drawable/short_blue_line"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_black"
+                    android:text="巡查情况记录"
+                    android:layout_height="wrap_content"/>
+
+
+            <EditText
+                    android:layout_width="0dp"
+                    android:hint="输入巡查记录"
+                    app:layout_constraintTop_toBottomOf="@id/title4"
+                    android:id="@+id/edtXunChaJiLu"
+                    app:layout_constraintStart_toStartOf="@id/title4"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/btnSub"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="8dp"
+                    android:background="@drawable/edit_bg_gray"
+                    android:gravity="start"
+                    android:paddingBottom="30dp"
+                    android:layout_height="0dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="0/300"
+                    app:layout_constraintEnd_toEndOf="@id/edtXunChaJiLu"
+                    app:layout_constraintBottom_toBottomOf="@id/edtXunChaJiLu"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/text_gray"
+                    android:id="@+id/textCount"
+                    android:layout_height="wrap_content"/>
+
+
+            <Button
+                    android:text="提交"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/edtXunChaJiLu"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/normal_blue"
+                    android:id="@+id/btnSub"
+                    android:textColor="@color/qmui_config_color_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:text="放弃"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btnSub"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="12dp"
+                    android:backgroundTint="#FFFA4164"
+                    android:id="@+id/btnCancel"
+                    android:textColor="@color/qmui_config_color_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

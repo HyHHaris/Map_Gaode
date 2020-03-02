@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            app:autoSizeStepGranularity="0.5sp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:singleLine="true"
+            android:id="@+id/text1"
+            android:text="时间"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:lines="1"
+            android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            android:id="@+id/text2"
+            app:autoSizeStepGranularity="0.5sp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:text="巡查人员"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:lines="1"
+            android:layout_height="match_parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            app:autoSizeStepGranularity="0.5sp"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:lines="2"
+            android:id="@+id/text3"
+            android:text="巡查地块"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:layout_height="match_parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            app:autoSizeTextType="uniform"
+            app:autoSizeStepGranularity="0.5sp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:lines="2"
+            android:text="操作"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:layout_height="match_parent"/>
+    <!--
+        <LinearLayout
+                android:id="@+id/btn"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:gravity="center"
+
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="4dp"
+                    android:textSize="10sp"
+                    android:text="操作"
+                    android:id="@+id/btn1"
+                    android:textColor="@color/text_black"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>-->
+
+</LinearLayout>
